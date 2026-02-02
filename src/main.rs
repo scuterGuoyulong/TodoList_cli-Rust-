@@ -6,7 +6,6 @@ fn main() {
     let mut todo_list: Vec<String> = Vec::new();
     // 欢迎语
     println!("===== Rust简易待办清单（To-Do List）=====");
-    println!("华为多模态大模型实习岗 Rust小项目\n");
 
     // 无限循环，实现交互菜单的持续运行，输入4则退出
     loop {
