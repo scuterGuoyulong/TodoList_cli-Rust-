@@ -1,4 +1,3 @@
-
 // 无第三方依赖，覆盖Rust核心基础语法，直接运行即可
 
 fn main() {
@@ -15,7 +14,7 @@ fn main() {
         println!("2. 查看所有待办项");
         println!("3. 删除待办项");
         println!("4. 退出程序");
-        print!("请输入序号（1-4）：");
+        println!("请输入序号（1-4）：");
 
         // 读取用户输入的命令（处理命令行输入，Rust基础IO操作）
         let mut input = String::new();
@@ -43,7 +42,7 @@ fn main() {
 
 // 定义添加待办项的函数，参数是todo_list的可变引用（&mut Vec<String>）
 fn add_todo(todo_list: &mut Vec<String>) {
-    print!("\n请输入待办项内容：");
+    println!("\n请输入待办项内容：");
     let mut new_todo = String::new();
     std::io::stdin()
         .read_line(&mut new_todo)
